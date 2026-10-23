@@ -201,6 +201,16 @@
         target.x = (e.clientX / window.innerWidth - 0.5) * 0.6;
         target.y = (e.clientY / window.innerHeight - 0.5) * 0.4;
       }, { passive: true });
+    } else {
+      /* touch: drag across the hero turns the scene; passive so page scroll is never blocked */
+      var hero = canvas.parentElement;
+      hero.addEventListener("touchmove", function (e) {
+        var t = e.touches[0];
+        if (!t) return;
+        target.x = (t.clientX / window.innerWidth - 0.5) * 0.9;
+        target.y = (t.clientY / window.innerHeight - 0.5) * 0.5;
+      }, { passive: true });
+      hero.addEventListener("touchend", function () { target.x = 0; target.y = 0; }, { passive: true });
     }
 
     var visible = true;

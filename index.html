@@ -43,9 +43,9 @@
       </button>
       <nav aria-label="Primary">
         <ul class="nav-links" id="nav-links">
+          <li><a href="#projects">Projects</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
           <li><a href="#skills">Skills</a></li>
           <li><a href="#contact">Contact</a></li>
           <li class="nav-cta-item"><a class="btn btn-ghost btn-sm" href="res/Praveendhra_Rajkumar_CV.pdf" target="_blank" rel="noopener">Résumé <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a></li>
@@ -93,6 +93,99 @@
       <button class="motion-toggle" type="button" aria-pressed="false" aria-label="Pause background animation">
         <i class="fa-solid fa-pause" aria-hidden="true"></i><span class="motion-label">Pause motion</span>
       </button>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section section-alt" id="projects" aria-labelledby="proj-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="section-kicker">Projects</p>
+          <h2 id="proj-title">Apps I've built</h2>
+          <p class="section-lead">Built, deployed and run end to end. Try the live ones.</p>
+        </div>
+
+        <div class="proj-grid">
+          <article class="proj-card tilt reveal" data-tilt-max="8">
+            <div class="proj-top">
+              <span class="proj-icon" aria-hidden="true"><i class="fa-solid fa-chart-simple"></i></span>
+              <span class="status status-live"><span class="dot-live" aria-hidden="true"></span>Live</span>
+            </div>
+            <h3>Momentum</h3>
+            <p>A self-improvement tracker for workouts, habits, skills and mood, with a GitHub-style progress graph. Supabase auth and Postgres, deployed through GitHub Actions on a custom domain.</p>
+            <ul class="chips" aria-label="Stack"><li>JavaScript</li><li>Supabase</li><li>PostgreSQL</li><li>GitHub Actions</li></ul>
+            <div class="proj-links">
+              <a class="btn btn-primary btn-sm" href="https://momentum.praveendhra.com" target="_blank" rel="noopener">Open live app <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+              <a class="btn btn-ghost btn-sm" href="https://github.com/praveendhra/Momentum" target="_blank" rel="noopener"><i class="fa-brands fa-github" aria-hidden="true"></i> Source</a>
+            </div>
+          </article>
+
+          <article class="proj-card tilt reveal" data-tilt-max="8">
+            <div class="proj-top">
+              <span class="proj-icon proj-icon-img" aria-hidden="true"><img src="res/logo/task-192.webp" width="40" height="40" alt=""></span>
+              <span class="status status-live"><span class="dot-live" aria-hidden="true"></span>Live · iOS in progress</span>
+            </div>
+            <h3>Task Tracker: Step by Step</h3>
+            <p>A Flutter task app for breaking work into steps and tracking progress across devices. Pushes to the source repo build the app and publish it to a second repo on GitHub Pages.</p>
+            <ul class="chips" aria-label="Stack"><li>Flutter</li><li>Dart</li><li>GitHub Pages</li><li>GitHub Actions</li></ul>
+            <div class="proj-links">
+              <a class="btn btn-primary btn-sm" href="https://task.praveendhra.com" target="_blank" rel="noopener">Open live app <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+              <a class="btn btn-ghost btn-sm" href="https://github.com/praveendhra/task_tracker_app" target="_blank" rel="noopener"><i class="fa-brands fa-github" aria-hidden="true"></i> Source</a>
+            </div>
+          </article>
+
+          <article class="proj-card tilt reveal" data-tilt-max="8">
+            <div class="proj-top">
+              <span class="proj-icon" aria-hidden="true"><i class="fa-solid fa-bell"></i></span>
+              <span class="status status-build"><i class="fa-solid fa-person-digging" aria-hidden="true"></i>Under construction</span>
+            </div>
+            <h3>Cadence: Interval Alarm</h3>
+            <p>A Flutter alarm app that rings at set intervals between a start and end time, with pre-ring reminders, custom audio import and preloaded tunes I synthesized in code. Testing on TestFlight ahead of the App Store.</p>
+            <ul class="chips" aria-label="Stack"><li>Flutter</li><li>Dart</li><li>iOS</li><li>Local notifications</li></ul>
+            <div class="proj-links">
+              <span class="btn btn-disabled btn-sm" aria-disabled="true" title="Not on the App Store yet">App Store: coming soon</span>
+              <a class="btn btn-ghost btn-sm" href="https://github.com/praveendhra/interval_alarm_app" target="_blank" rel="noopener"><i class="fa-brands fa-github" aria-hidden="true"></i> Source</a>
+            </div>
+          </article>
+        </div>
+
+        <div class="subhead reveal">
+          <h3>AI tooling I've built at work</h3>
+          <p>Internal to Bright Horizons, so no public links. Happy to walk through any of them.</p>
+        </div>
+        <div class="mini-grid">
+          <article class="mini-card glass reveal">
+            <i class="fa-solid fa-plug" aria-hidden="true"></i>
+            <h4>MCP servers</h4>
+            <p>One SSO-authenticated path into GitHub, Azure DevOps and Dynatrace for every engineer.</p>
+          </article>
+          <article class="mini-card glass reveal">
+            <i class="fa-solid fa-robot" aria-hidden="true"></i>
+            <h4>AI cherry-pick agent</h4>
+            <p>Comment on a PR and the Copilot coding agent prepares the cherry-pick.</p>
+          </article>
+          <article class="mini-card glass reveal">
+            <i class="fa-solid fa-gauge-high" aria-hidden="true"></i>
+            <h4>Copilot metrics</h4>
+            <p>Adoption tooling on Azure and PostgreSQL, plus custom developer agents.</p>
+          </article>
+          <article class="mini-card glass reveal">
+            <i class="fa-solid fa-brain" aria-hidden="true"></i>
+            <h4>LLM fine-tuning study</h4>
+            <p>Scoped tuning an open-weight model on runbooks and incidents on Azure GPU VMs.</p>
+          </article>
+        </div>
+
+        <details class="earlier reveal">
+          <summary>Earlier projects <i class="fa-solid fa-chevron-down" aria-hidden="true"></i></summary>
+          <ul class="earlier-list">
+            <li><strong>Intelligent Heart Disease Prediction</strong> — Random Forest model with 96% accuracy; published research. <a href="https://drive.google.com/file/d/1ZRPt7LMR6alSG_GPH1cDCgwEGZjAzL2j/view" target="_blank" rel="noopener">Read the paper</a></li>
+            <li><strong>Meeting App</strong> — Flask and PostgreSQL church management tool with Stripe payments and Document AI OCR (UMass Boston).</li>
+            <li><strong>Inventory Comparison Service</strong> — Java tool comparing primary and DR inventories before failover drills (Zoho).</li>
+            <li><strong>ANPR Parking System</strong> — OpenCV number-plate recognition for automated parking entry and exit.</li>
+            <li><strong>Arduino Driveway Lights</strong> — motion and ambient-light sensors that switch lights on only when needed.</li>
+          </ul>
+        </details>
+      </div>
     </section>
 
     <!-- ABOUT -->
@@ -199,101 +292,8 @@
       </div>
     </section>
 
-    <!-- PROJECTS -->
-    <section class="section" id="projects" aria-labelledby="proj-title">
-      <div class="container">
-        <div class="section-head reveal">
-          <p class="section-kicker">Projects</p>
-          <h2 id="proj-title">Apps I've built</h2>
-          <p class="section-lead">Built, deployed and run end to end. Try the live ones.</p>
-        </div>
-
-        <div class="proj-grid">
-          <article class="proj-card tilt reveal" data-tilt-max="8">
-            <div class="proj-top">
-              <span class="proj-icon" aria-hidden="true"><i class="fa-solid fa-chart-simple"></i></span>
-              <span class="status status-live"><span class="dot-live" aria-hidden="true"></span>Live</span>
-            </div>
-            <h3>Momentum</h3>
-            <p>A self-improvement tracker for workouts, habits, skills and mood, with a GitHub-style progress graph. Supabase auth and Postgres, deployed through GitHub Actions on a custom domain.</p>
-            <ul class="chips" aria-label="Stack"><li>JavaScript</li><li>Supabase</li><li>PostgreSQL</li><li>GitHub Actions</li></ul>
-            <div class="proj-links">
-              <a class="btn btn-primary btn-sm" href="https://momentum.praveendhra.com" target="_blank" rel="noopener">Open live app <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
-              <a class="btn btn-ghost btn-sm" href="https://github.com/praveendhra/Momentum" target="_blank" rel="noopener"><i class="fa-brands fa-github" aria-hidden="true"></i> Source</a>
-            </div>
-          </article>
-
-          <article class="proj-card tilt reveal" data-tilt-max="8">
-            <div class="proj-top">
-              <span class="proj-icon proj-icon-img" aria-hidden="true"><img src="res/logo/task-192.webp" width="40" height="40" alt=""></span>
-              <span class="status status-live"><span class="dot-live" aria-hidden="true"></span>Live · iOS in progress</span>
-            </div>
-            <h3>Task Tracker: Step by Step</h3>
-            <p>A Flutter task app for breaking work into steps and tracking progress across devices. Pushes to the source repo build the app and publish it to a second repo on GitHub Pages.</p>
-            <ul class="chips" aria-label="Stack"><li>Flutter</li><li>Dart</li><li>GitHub Pages</li><li>GitHub Actions</li></ul>
-            <div class="proj-links">
-              <a class="btn btn-primary btn-sm" href="https://task.praveendhra.com" target="_blank" rel="noopener">Open live app <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
-              <a class="btn btn-ghost btn-sm" href="https://github.com/praveendhra/task_tracker_app" target="_blank" rel="noopener"><i class="fa-brands fa-github" aria-hidden="true"></i> Source</a>
-            </div>
-          </article>
-
-          <article class="proj-card tilt reveal" data-tilt-max="8">
-            <div class="proj-top">
-              <span class="proj-icon" aria-hidden="true"><i class="fa-solid fa-bell"></i></span>
-              <span class="status status-build"><i class="fa-solid fa-person-digging" aria-hidden="true"></i>Under construction</span>
-            </div>
-            <h3>Cadence: Interval Alarm</h3>
-            <p>A Flutter alarm app that rings at set intervals between a start and end time, with pre-ring reminders, custom audio import and preloaded tunes I synthesized in code. Testing on TestFlight ahead of the App Store.</p>
-            <ul class="chips" aria-label="Stack"><li>Flutter</li><li>Dart</li><li>iOS</li><li>Local notifications</li></ul>
-            <div class="proj-links">
-              <span class="btn btn-disabled btn-sm" aria-disabled="true" title="Not on the App Store yet">App Store: coming soon</span>
-              <a class="btn btn-ghost btn-sm" href="https://github.com/praveendhra/interval_alarm_app" target="_blank" rel="noopener"><i class="fa-brands fa-github" aria-hidden="true"></i> Source</a>
-            </div>
-          </article>
-        </div>
-
-        <div class="subhead reveal">
-          <h3>AI tooling I've built at work</h3>
-          <p>Internal to Bright Horizons, so no public links. Happy to walk through any of them.</p>
-        </div>
-        <div class="mini-grid">
-          <article class="mini-card glass reveal">
-            <i class="fa-solid fa-plug" aria-hidden="true"></i>
-            <h4>MCP servers</h4>
-            <p>One SSO-authenticated path into GitHub, Azure DevOps and Dynatrace for every engineer.</p>
-          </article>
-          <article class="mini-card glass reveal">
-            <i class="fa-solid fa-robot" aria-hidden="true"></i>
-            <h4>AI cherry-pick agent</h4>
-            <p>Comment on a PR and the Copilot coding agent prepares the cherry-pick.</p>
-          </article>
-          <article class="mini-card glass reveal">
-            <i class="fa-solid fa-gauge-high" aria-hidden="true"></i>
-            <h4>Copilot metrics</h4>
-            <p>Adoption tooling on Azure and PostgreSQL, plus custom developer agents.</p>
-          </article>
-          <article class="mini-card glass reveal">
-            <i class="fa-solid fa-brain" aria-hidden="true"></i>
-            <h4>LLM fine-tuning study</h4>
-            <p>Scoped tuning an open-weight model on runbooks and incidents on Azure GPU VMs.</p>
-          </article>
-        </div>
-
-        <details class="earlier reveal">
-          <summary>Earlier projects <i class="fa-solid fa-chevron-down" aria-hidden="true"></i></summary>
-          <ul class="earlier-list">
-            <li><strong>Intelligent Heart Disease Prediction</strong> — Random Forest model with 96% accuracy; published research. <a href="https://drive.google.com/file/d/1ZRPt7LMR6alSG_GPH1cDCgwEGZjAzL2j/view" target="_blank" rel="noopener">Read the paper</a></li>
-            <li><strong>Meeting App</strong> — Flask and PostgreSQL church management tool with Stripe payments and Document AI OCR (UMass Boston).</li>
-            <li><strong>Inventory Comparison Service</strong> — Java tool comparing primary and DR inventories before failover drills (Zoho).</li>
-            <li><strong>ANPR Parking System</strong> — OpenCV number-plate recognition for automated parking entry and exit.</li>
-            <li><strong>Arduino Driveway Lights</strong> — motion and ambient-light sensors that switch lights on only when needed.</li>
-          </ul>
-        </details>
-      </div>
-    </section>
-
     <!-- SKILLS -->
-    <section class="section section-alt" id="skills" aria-labelledby="skills-title">
+    <section class="section" id="skills" aria-labelledby="skills-title">
       <div class="container">
         <div class="section-head reveal">
           <p class="section-kicker">Skills</p>

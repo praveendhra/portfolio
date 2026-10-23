@@ -265,6 +265,7 @@
     renderOnce = function () { draw(clock.getElapsedTime()); };
 
     if (running) loop(); else renderOnce();
+    canvas.classList.add("ready");
 
     motionBtn.addEventListener("click", function () {
       running = !running;
@@ -274,6 +275,25 @@
     updateMotionBtn();
   }
 
-  if (window.THREE) initScene();
-  else window.addEventListener("load", initScene);
+  /* Load three.js only after the page has painted, so the 3D scene never delays content.
+     Skipped entirely when the visitor has Data Saver on. */
+  var conn = navigator.connection || {};
+  if (conn.saveData) {
+    motionBtn.hidden = true;
+  } else {
+    var loadThree = function () {
+      var s = document.createElement("script");
+      s.src = "https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js";
+      s.async = true;
+      s.onload = initScene;
+      s.onerror = function () { motionBtn.hidden = true; };
+      document.head.appendChild(s);
+    };
+    var whenIdle = function () {
+      if ("requestIdleCallback" in window) requestIdleCallback(loadThree, { timeout: isSmall ? 2500 : 1200 });
+      else setTimeout(loadThree, isSmall ? 1200 : 300);
+    };
+    if (document.readyState === "complete") whenIdle();
+    else window.addEventListener("load", whenIdle);
+  }
 })();

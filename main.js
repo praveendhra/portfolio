@@ -97,6 +97,23 @@
     });
   }
 
+  /* ---------- human / machine portrait ---------- */
+  var photoCard = document.querySelector(".photo-card");
+  var cyberBtn = document.querySelector(".cyber-toggle");
+  if (photoCard && cyberBtn) {
+    cyberBtn.setAttribute("aria-label", "Toggle machine mode on portrait");
+    cyberBtn.addEventListener("click", function (e) {
+      e.stopPropagation();
+      var on = !photoCard.classList.contains("is-cyber");
+      photoCard.classList.toggle("is-cyber", on);
+      cyberBtn.setAttribute("aria-pressed", String(on));
+    });
+    if (!finePointer) {
+      /* touch: tapping the portrait flips between human and machine */
+      photoCard.querySelector(".photo-frame").addEventListener("click", function () { cyberBtn.click(); });
+    }
+  }
+
   /* ---------- three.js hero scene ---------- */
   var canvas = document.getElementById("hero-canvas");
   var motionBtn = document.querySelector(".motion-toggle");

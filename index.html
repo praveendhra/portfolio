@@ -10,7 +10,7 @@
   <meta property="og:title" content="Praveendhra Rajkumar — AI &amp; App Developer">
   <meta property="og:description" content="I build AI developer tools and apps, and ship them to production.">
   <meta property="og:url" content="https://portfolio.praveendhra.com/">
-  <meta property="og:image" content="https://portfolio.praveendhra.com/res/profile-900.jpg">
+  <meta property="og:image" content="https://portfolio.praveendhra.com/res/profile.jpg">
   <meta property="og:type" content="website">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,7 +18,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="styles.css?v=3">
-  <link rel="preload" as="image" href="res/profile-900.webp" type="image/webp">
+  <link rel="preload" as="image" href="res/profile.webp" type="image/webp">
 
   <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-PFGXN2TVCC"></script>
@@ -79,10 +79,22 @@
         <div class="hero-visual">
           <div class="photo-card tilt" data-tilt-max="10">
             <div class="photo-ring" aria-hidden="true"></div>
-            <picture>
-              <source srcset="res/profile-900.webp" type="image/webp">
-              <img src="res/profile-900.jpg" width="900" height="1047" alt="Praveendhra Rajkumar standing on a beach at sunset">
-            </picture>
+            <div class="photo-frame">
+              <picture>
+                <source srcset="res/profile.webp" type="image/webp">
+                <img src="res/profile.jpg" width="720" height="720" alt="Portrait of Praveendhra Rajkumar">
+              </picture>
+              <picture class="cyber-layer" aria-hidden="true">
+                <source srcset="res/profile-cyber.webp" type="image/webp">
+                <img src="res/profile-cyber.jpg" width="720" height="720" alt="" loading="lazy">
+              </picture>
+              <span class="cyber-line" aria-hidden="true"></span>
+              <span class="cyber-label cyber-label-h" aria-hidden="true">HUMAN</span>
+              <span class="cyber-label cyber-label-m" aria-hidden="true">MACHINE</span>
+              <button class="cyber-toggle" type="button" aria-pressed="false">
+                <i class="fa-solid fa-microchip" aria-hidden="true"></i><span>Machine mode</span>
+              </button>
+            </div>
             <div class="photo-badge glass">
               <span class="dot-live" aria-hidden="true"></span>
               <span>Open to AI &amp; software roles</span>

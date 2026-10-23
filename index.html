@@ -2,16 +2,24 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
-  <meta http-equiv="Pragma" content="no-cache">
-  <meta http-equiv="Expires" content="0">
-  <title>Praveendhra Rajkumar — Portfolio</title>
-  <link rel="stylesheet" href="styles.css?v=2">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Praveendhra Rajkumar — AI &amp; App Developer, DevOps Engineer</title>
+  <meta name="description" content="Praveendhra Rajkumar builds AI developer tools and apps and ships them to production. DevOps engineer at Bright Horizons, Greater Boston.">
+  <meta name="theme-color" content="#0b0f1a">
+  <link rel="canonical" href="https://portfolio.praveendhra.com/">
+  <meta property="og:title" content="Praveendhra Rajkumar — AI &amp; App Developer">
+  <meta property="og:description" content="I build AI developer tools and apps, and ship them to production.">
+  <meta property="og:url" content="https://portfolio.praveendhra.com/">
+  <meta property="og:image" content="https://portfolio.praveendhra.com/res/profile-900.jpg">
+  <meta property="og:type" content="website">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css?v=3">
+  <link rel="preload" as="image" href="res/profile-900.webp" type="image/webp">
+
   <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-PFGXN2TVCC"></script>
   <script>
@@ -22,91 +30,352 @@
   </script>
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-  <aside class="sidebar">
-    <div class="sidebar-brand">
-      <div class="brand-name">Praveendhra<br>Rajkumar</div>
-      <div class="brand-role">// DevOps &amp; Full-Stack</div>
+  <header class="nav" id="top">
+    <div class="nav-inner container">
+      <a class="brand" href="#top" aria-label="Praveendhra Rajkumar, back to top">
+        <span class="brand-mark" aria-hidden="true">PR</span>
+        <span class="brand-name">Praveendhra Rajkumar</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Open menu">
+        <i class="fa-solid fa-bars" aria-hidden="true"></i>
+      </button>
+      <nav aria-label="Primary">
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li class="nav-cta-item"><a class="btn btn-ghost btn-sm" href="res/Praveendhra_Rajkumar_CV.pdf" target="_blank" rel="noopener">Résumé <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a></li>
+        </ul>
+      </nav>
     </div>
+  </header>
 
-    <nav class="sidebar-nav">
-      <button class="side-btn active" data-page="home" onclick="loadPage('home', this)">
-        <i class="fa-solid fa-house"></i>
-        <span>Home</span>
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero" aria-labelledby="hero-title">
+      <canvas id="hero-canvas" aria-hidden="true"></canvas>
+      <div class="hero-scrim" aria-hidden="true"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="pulse" aria-hidden="true"></span> DevOps engineer → AI &amp; app developer</p>
+          <h1 id="hero-title">Praveendhra Rajkumar</h1>
+          <p class="hero-lead">I build AI developer tools and apps, and ship them to production.</p>
+          <p class="hero-sub">DevOps Engineer at Bright Horizons, building MCP servers, GitHub Copilot agents and LLM tooling at work, and Flutter and web apps on my own time. Greater Boston, open to remote.</p>
+          <div class="hero-ctas">
+            <a class="btn btn-primary" href="#projects">See my work <i class="fa-solid fa-arrow-down" aria-hidden="true"></i></a>
+            <a class="btn btn-ghost" href="#contact">Get in touch</a>
+          </div>
+          <ul class="stats" aria-label="Highlights">
+            <li><strong>5+</strong><span>years shipping production systems</span></li>
+            <li><strong>99%+</strong><span>releases on schedule</span></li>
+            <li><strong>30%</strong><span>faster incident recovery</span></li>
+            <li><strong>3</strong><span>apps built end to end</span></li>
+          </ul>
+        </div>
+        <div class="hero-visual">
+          <div class="photo-card tilt" data-tilt-max="10">
+            <div class="photo-ring" aria-hidden="true"></div>
+            <picture>
+              <source srcset="res/profile-900.webp" type="image/webp">
+              <img src="res/profile-900.jpg" width="900" height="1047" alt="Praveendhra Rajkumar standing on a beach at sunset">
+            </picture>
+            <div class="photo-badge glass">
+              <span class="dot-live" aria-hidden="true"></span>
+              <span>Open to AI &amp; software roles</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="motion-toggle" type="button" aria-pressed="false" aria-label="Pause background animation">
+        <i class="fa-solid fa-pause" aria-hidden="true"></i><span class="motion-label">Pause motion</span>
       </button>
-      <button class="side-btn" data-page="work" onclick="loadPage('work', this)">
-        <i class="fa-solid fa-briefcase"></i>
-        <span>Experience</span>
-      </button>
-      <button class="side-btn" data-page="projects" onclick="loadPage('projects', this)">
-        <i class="fa-solid fa-code"></i>
-        <span>Projects</span>
-      </button>
-      <button class="side-btn" data-page="skills" onclick="loadPage('skills', this)">
-        <i class="fa-solid fa-layer-group"></i>
-        <span>Skills</span>
-      </button>
-      <button class="side-btn" data-page="education" onclick="loadPage('education', this)">
-        <i class="fa-solid fa-graduation-cap"></i>
-        <span>Education</span>
-      </button>
-      <button class="side-btn" data-page="contact" onclick="loadPage('contact', this)">
-        <i class="fa-solid fa-envelope"></i>
-        <span>Contact</span>
-      </button>
-    </nav>
+    </section>
 
-    <div class="sidebar-footer">
-      <a href="https://linkedin.com/in/praveendhra" target="_blank" title="LinkedIn">
-        <i class="fa-brands fa-linkedin"></i>
-      </a>
-      <a href="https://github.com/prvn9021" target="_blank" title="GitHub">
-        <i class="fa-brands fa-github"></i>
-      </a>
-      <a href="mailto:prvn9021@gmail.com" title="Email">
-        <i class="fa-solid fa-envelope"></i>
-      </a>
-    </div>
-  </aside>
+    <!-- ABOUT -->
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="container about-grid">
+        <div class="reveal">
+          <p class="section-kicker">About</p>
+          <h2 id="about-title">I build the systems that let teams ship with confidence.</h2>
+        </div>
+        <div class="about-body reveal">
+          <p>Then I automate the parts nobody wants to do. I'm a DevOps engineer at Bright Horizons, and most of what I build now is software: AI developer tools and automation services at work, and mobile and web apps on my own time.</p>
+          <p>I started on Zoho's in-house cloud management console (Java, Struts), did platform work at UMass Boston while finishing my MS in Computer Science, and today run CI/CD, Azure infrastructure and release engineering for business-critical .NET apps.</p>
+          <p>Being able to build a tool <em>and</em> run it in production is the edge I bring to AI and app teams.</p>
+        </div>
+      </div>
+    </section>
 
-  <main class="main-content">
-    <div id="page-content"></div>
+    <!-- EXPERIENCE -->
+    <section class="section section-alt" id="experience" aria-labelledby="exp-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="section-kicker">Experience</p>
+          <h2 id="exp-title">Where I've shipped</h2>
+        </div>
+        <ol class="timeline">
+          <li class="tl-item reveal">
+            <div class="tl-dot" aria-hidden="true"></div>
+            <article class="tl-card glass tilt" data-tilt-max="4">
+              <header class="tl-head">
+                <div>
+                  <h3>DevOps Engineer</h3>
+                  <p class="tl-org">Bright Horizons · Newton, MA (Hybrid)</p>
+                </div>
+                <p class="tl-date">Jun 2024 – Present</p>
+              </header>
+              <ul class="tl-points">
+                <li>Built production MCP servers (TypeScript) giving engineers one SSO-authenticated path into GitHub, Azure DevOps and Dynatrace, with Azure AD OAuth On-Behalf-Of and API Management; in use org-wide.</li>
+                <li>Built an AI cherry-pick workflow: a <code>/ai-cherry-pick</code> PR comment assigns the GitHub Copilot coding agent to prepare the change.</li>
+                <li>Deployed Copilot metrics tooling on Azure and PostgreSQL and built custom agents that drove Copilot adoption.</li>
+                <li>Leading the Azure DevOps → GitHub migration: 7 Python migration scripts plus GitHub Actions automation and org-wide rulesets.</li>
+                <li>99%+ of bi-weekly releases on schedule; MTTR down 30%; configuration drift down 45% with Terraform.</li>
+              </ul>
+              <ul class="chips" aria-label="Stack">
+                <li>TypeScript</li><li>Python</li><li>MCP</li><li>GitHub Copilot</li><li>Azure</li><li>Kubernetes</li><li>Terraform</li>
+              </ul>
+            </article>
+          </li>
+          <li class="tl-item reveal">
+            <div class="tl-dot" aria-hidden="true"></div>
+            <article class="tl-card glass tilt" data-tilt-max="4">
+              <header class="tl-head">
+                <div>
+                  <h3>Platform Engineer (part-time)</h3>
+                  <p class="tl-org">UMass Boston, IT Services · Boston, MA</p>
+                </div>
+                <p class="tl-date">Sep 2022 – May 2024</p>
+              </header>
+              <ul class="tl-points">
+                <li>Jenkins pipelines for 15+ internal tools; deploys went from days to under 15 minutes.</li>
+                <li>Python and Bash automation for 200+ ticket workflows, cutting manual resolution time 35%.</li>
+                <li>Prometheus and Grafana alerting that cut incident detection time 40%; zero-downtime 500 GB+ migration with Ansible.</li>
+              </ul>
+              <ul class="chips" aria-label="Stack">
+                <li>Python</li><li>Docker</li><li>Azure</li><li>Jenkins</li><li>Ansible</li>
+              </ul>
+            </article>
+          </li>
+          <li class="tl-item reveal">
+            <div class="tl-dot" aria-hidden="true"></div>
+            <article class="tl-card glass tilt" data-tilt-max="4">
+              <header class="tl-head">
+                <div>
+                  <h3>Cloud Infrastructure Engineer</h3>
+                  <p class="tl-org">Zoho Corporation · Chennai, India</p>
+                </div>
+                <p class="tl-date">Dec 2019 – Sep 2022</p>
+              </header>
+              <ul class="tl-points">
+                <li>Fixed high-priority bugs and shipped improvements in Zoho's in-house cloud management console (Java, Struts, JavaScript).</li>
+                <li>Designed a configuration-comparison system that flags drift between production and DR before a failover exposes it.</li>
+                <li>Ran Kafka pipelines, NGINX/F5 routing, VMware ESXi and quarterly DR switchovers.</li>
+              </ul>
+              <ul class="chips" aria-label="Stack">
+                <li>Java</li><li>Struts</li><li>MySQL</li><li>Kafka</li><li>VMware</li>
+              </ul>
+            </article>
+          </li>
+          <li class="tl-item reveal">
+            <div class="tl-dot" aria-hidden="true"></div>
+            <article class="tl-card glass tilt" data-tilt-max="4">
+              <header class="tl-head">
+                <div>
+                  <h3>Software Engineer Intern</h3>
+                  <p class="tl-org">Zoho Corporation · Chennai, India</p>
+                </div>
+                <p class="tl-date">Jun – Jul 2019</p>
+              </header>
+              <ul class="tl-points">
+                <li>Built an internal full-stack tool in Java, JavaScript and MySQL for the infrastructure team.</li>
+              </ul>
+            </article>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section" id="projects" aria-labelledby="proj-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="section-kicker">Projects</p>
+          <h2 id="proj-title">Apps I've built</h2>
+          <p class="section-lead">Built, deployed and run end to end. Try the live ones.</p>
+        </div>
+
+        <div class="proj-grid">
+          <article class="proj-card tilt reveal" data-tilt-max="8">
+            <div class="proj-top">
+              <span class="proj-icon" aria-hidden="true"><i class="fa-solid fa-chart-simple"></i></span>
+              <span class="status status-live"><span class="dot-live" aria-hidden="true"></span>Live</span>
+            </div>
+            <h3>Momentum</h3>
+            <p>A self-improvement tracker for workouts, habits, skills and mood, with a GitHub-style progress graph. Supabase auth and Postgres, deployed through GitHub Actions on a custom domain.</p>
+            <ul class="chips" aria-label="Stack"><li>JavaScript</li><li>Supabase</li><li>PostgreSQL</li><li>GitHub Actions</li></ul>
+            <div class="proj-links">
+              <a class="btn btn-primary btn-sm" href="https://momentum.praveendhra.com" target="_blank" rel="noopener">Open live app <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+              <a class="btn btn-ghost btn-sm" href="https://github.com/praveendhra/Momentum" target="_blank" rel="noopener"><i class="fa-brands fa-github" aria-hidden="true"></i> Source</a>
+            </div>
+          </article>
+
+          <article class="proj-card tilt reveal" data-tilt-max="8">
+            <div class="proj-top">
+              <span class="proj-icon proj-icon-img" aria-hidden="true"><img src="res/logo/task-192.webp" width="40" height="40" alt=""></span>
+              <span class="status status-live"><span class="dot-live" aria-hidden="true"></span>Live · iOS in progress</span>
+            </div>
+            <h3>Task Tracker: Step by Step</h3>
+            <p>A Flutter task app for breaking work into steps and tracking progress across devices. Pushes to the source repo build the app and publish it to a second repo on GitHub Pages.</p>
+            <ul class="chips" aria-label="Stack"><li>Flutter</li><li>Dart</li><li>GitHub Pages</li><li>GitHub Actions</li></ul>
+            <div class="proj-links">
+              <a class="btn btn-primary btn-sm" href="https://task.praveendhra.com" target="_blank" rel="noopener">Open live app <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+              <a class="btn btn-ghost btn-sm" href="https://github.com/praveendhra/task_tracker_app" target="_blank" rel="noopener"><i class="fa-brands fa-github" aria-hidden="true"></i> Source</a>
+            </div>
+          </article>
+
+          <article class="proj-card tilt reveal" data-tilt-max="8">
+            <div class="proj-top">
+              <span class="proj-icon" aria-hidden="true"><i class="fa-solid fa-bell"></i></span>
+              <span class="status status-build"><i class="fa-solid fa-person-digging" aria-hidden="true"></i>Under construction</span>
+            </div>
+            <h3>Cadence: Interval Alarm</h3>
+            <p>A Flutter alarm app that rings at set intervals between a start and end time, with pre-ring reminders, custom audio import and preloaded tunes I synthesized in code. Testing on TestFlight ahead of the App Store.</p>
+            <ul class="chips" aria-label="Stack"><li>Flutter</li><li>Dart</li><li>iOS</li><li>Local notifications</li></ul>
+            <div class="proj-links">
+              <span class="btn btn-disabled btn-sm" aria-disabled="true" title="Not on the App Store yet">App Store: coming soon</span>
+              <a class="btn btn-ghost btn-sm" href="https://github.com/praveendhra/interval_alarm_app" target="_blank" rel="noopener"><i class="fa-brands fa-github" aria-hidden="true"></i> Source</a>
+            </div>
+          </article>
+        </div>
+
+        <div class="subhead reveal">
+          <h3>AI tooling I've built at work</h3>
+          <p>Internal to Bright Horizons, so no public links. Happy to walk through any of them.</p>
+        </div>
+        <div class="mini-grid">
+          <article class="mini-card glass reveal">
+            <i class="fa-solid fa-plug" aria-hidden="true"></i>
+            <h4>MCP servers</h4>
+            <p>One SSO-authenticated path into GitHub, Azure DevOps and Dynatrace for every engineer.</p>
+          </article>
+          <article class="mini-card glass reveal">
+            <i class="fa-solid fa-robot" aria-hidden="true"></i>
+            <h4>AI cherry-pick agent</h4>
+            <p>Comment on a PR and the Copilot coding agent prepares the cherry-pick.</p>
+          </article>
+          <article class="mini-card glass reveal">
+            <i class="fa-solid fa-gauge-high" aria-hidden="true"></i>
+            <h4>Copilot metrics</h4>
+            <p>Adoption tooling on Azure and PostgreSQL, plus custom developer agents.</p>
+          </article>
+          <article class="mini-card glass reveal">
+            <i class="fa-solid fa-brain" aria-hidden="true"></i>
+            <h4>LLM fine-tuning study</h4>
+            <p>Scoped tuning an open-weight model on runbooks and incidents on Azure GPU VMs.</p>
+          </article>
+        </div>
+
+        <details class="earlier reveal">
+          <summary>Earlier projects <i class="fa-solid fa-chevron-down" aria-hidden="true"></i></summary>
+          <ul class="earlier-list">
+            <li><strong>Intelligent Heart Disease Prediction</strong> — Random Forest model with 96% accuracy; published research. <a href="https://drive.google.com/file/d/1ZRPt7LMR6alSG_GPH1cDCgwEGZjAzL2j/view" target="_blank" rel="noopener">Read the paper</a></li>
+            <li><strong>Meeting App</strong> — Flask and PostgreSQL church management tool with Stripe payments and Document AI OCR (UMass Boston).</li>
+            <li><strong>Inventory Comparison Service</strong> — Java tool comparing primary and DR inventories before failover drills (Zoho).</li>
+            <li><strong>ANPR Parking System</strong> — OpenCV number-plate recognition for automated parking entry and exit.</li>
+            <li><strong>Arduino Driveway Lights</strong> — motion and ambient-light sensors that switch lights on only when needed.</li>
+          </ul>
+        </details>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section section-alt" id="skills" aria-labelledby="skills-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="section-kicker">Skills</p>
+          <h2 id="skills-title">What I work with</h2>
+        </div>
+        <div class="skill-grid">
+          <div class="skill-group glass reveal">
+            <h3><i class="fa-solid fa-wand-magic-sparkles" aria-hidden="true"></i> AI &amp; LLM</h3>
+            <ul class="chips"><li>MCP servers</li><li>GitHub Copilot agents</li><li>LLM applications</li><li>Prompt engineering</li><li>Azure AI Foundry</li><li>Fine-tuning</li></ul>
+          </div>
+          <div class="skill-group glass reveal">
+            <h3><i class="fa-solid fa-code" aria-hidden="true"></i> Languages</h3>
+            <ul class="chips"><li>Python</li><li>TypeScript</li><li>JavaScript</li><li>Java</li><li>Dart</li><li>PowerShell</li><li>Bash</li><li>SQL</li></ul>
+          </div>
+          <div class="skill-group glass reveal">
+            <h3><i class="fa-solid fa-mobile-screen" aria-hidden="true"></i> Apps &amp; APIs</h3>
+            <ul class="chips"><li>Flutter</li><li>Node.js</li><li>REST</li><li>GraphQL</li><li>OAuth / SSO</li><li>Supabase</li><li>Struts</li></ul>
+          </div>
+          <div class="skill-group glass reveal">
+            <h3><i class="fa-solid fa-cloud" aria-hidden="true"></i> Cloud &amp; DevOps</h3>
+            <ul class="chips"><li>Azure</li><li>AWS</li><li>GCP</li><li>Kubernetes</li><li>Docker</li><li>Terraform</li><li>GitHub Actions</li><li>Azure DevOps</li></ul>
+          </div>
+          <div class="skill-group glass reveal">
+            <h3><i class="fa-solid fa-database" aria-hidden="true"></i> Data</h3>
+            <ul class="chips"><li>PostgreSQL</li><li>SQL Server</li><li>MySQL</li><li>Kafka</li></ul>
+          </div>
+          <div class="skill-group glass reveal">
+            <h3><i class="fa-solid fa-chart-line" aria-hidden="true"></i> Observability</h3>
+            <ul class="chips"><li>Dynatrace</li><li>App Insights</li><li>Prometheus</li><li>Grafana</li></ul>
+          </div>
+        </div>
+
+        <div class="creds">
+          <div class="cred-col reveal">
+            <h3>Certifications</h3>
+            <ul class="cred-list">
+              <li><span>HashiCorp Terraform Associate (004)</span><span class="cred-date">Aug 2026</span></li>
+              <li><span>Microsoft Azure AI Fundamentals</span><span class="cred-date">Aug 2026</span></li>
+              <li><span>AWS DevOps on AWS Specialization</span><span class="cred-date">Mar 2025</span></li>
+              <li><span>AWS Containerized Applications on AWS</span><span class="cred-date">Mar 2025</span></li>
+            </ul>
+          </div>
+          <div class="cred-col reveal">
+            <h3>Education</h3>
+            <ul class="cred-list">
+              <li><span>M.S. Computer Science, University of Massachusetts Boston</span><span class="cred-date">2022 – 2024</span></li>
+              <li><span>B.E. Computer Science, St. Joseph's College of Engineering (Anna University)</span><span class="cred-date">2016 – 2020</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section contact" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <div class="contact-card glass reveal">
+          <p class="section-kicker">Contact</p>
+          <h2 id="contact-title">Building AI tools or apps?</h2>
+          <p class="section-lead">I'd like to hear about it. Message me and I'll walk you through what I've built.</p>
+          <div class="hero-ctas contact-ctas">
+            <a class="btn btn-primary" href="mailto:prvn9021@gmail.com"><i class="fa-solid fa-envelope" aria-hidden="true"></i> Email me</a>
+            <a class="btn btn-ghost" href="https://linkedin.com/in/praveendhra" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin" aria-hidden="true"></i> LinkedIn</a>
+            <a class="btn btn-ghost" href="https://github.com/praveendhra" target="_blank" rel="noopener"><i class="fa-brands fa-github" aria-hidden="true"></i> GitHub</a>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 
-  <script>
-    window.loadPage = function(page, btn) {
-      // Update active nav button
-      document.querySelectorAll('.side-btn').forEach(b => b.classList.remove('active'));
-      if (btn) {
-        btn.classList.add('active');
-      } else {
-        const match = document.querySelector(`.side-btn[data-page="${page}"]`);
-        if (match) match.classList.add('active');
-      }
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© <span id="year">2026</span> Praveendhra Rajkumar · Greater Boston</p>
+      <ul class="footer-links">
+        <li><a href="https://momentum.praveendhra.com" target="_blank" rel="noopener">Momentum</a></li>
+        <li><a href="https://task.praveendhra.com" target="_blank" rel="noopener">Task Tracker</a></li>
+        <li><a href="res/Praveendhra_Rajkumar_CV.pdf" target="_blank" rel="noopener">Résumé</a></li>
+      </ul>
+    </div>
+  </footer>
 
-      fetch(page + '.html')
-        .then(res => {
-          if (!res.ok) throw new Error('Not found');
-          return res.text();
-        })
-        .then(html => {
-          const el = document.getElementById('page-content');
-          el.innerHTML = html;
-          el.classList.remove('page-enter');
-          void el.offsetWidth; // reflow
-          el.classList.add('page-enter');
-          document.querySelector('.main-content').scrollTo({ top: 0, behavior: 'instant' });
-        })
-        .catch(err => console.error('Failed to load:', page, err));
-    };
-
-    // Navigate helper — called from content pages
-    window.navigateTo = function(page) {
-      window.loadPage(page, null);
-    };
-
-    // Load home on init
-    loadPage('home', document.querySelector('.side-btn[data-page="home"]'));
-  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" defer></script>
+  <script src="main.js?v=3" defer></script>
 </body>
 </html>
